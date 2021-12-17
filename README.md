@@ -1,6 +1,6 @@
-# emp_PerfectPurplePetunias
+# PerfectPurplePetunias
 
-## Roster: 
+## Roster:
 * John Gupta-She
 * Lauren Lee
 * Emily Ortiz
