@@ -1,1 +1,8 @@
-foo
+QCC:
+
+DISCO:
+Terminal Message with compiling BinSearch:
+Note: BinSearch.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+Should not matter since we know elements are comparable (Integers).
