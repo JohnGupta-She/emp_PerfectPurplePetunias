@@ -1,1 +1,3 @@
-foo
+public class BinSearch{
+  
+}
