@@ -1,1 +1,6 @@
-foo
+2021-12-16 In Class
+Emily: suggested we use counters as an indicator of speed 
+Lauren: suggests text cases that would make sure to take specific cases in which the target was in the far left, right, or middle
+John: suggests we used our already coded guess methods to test many different random cases and take the average
+Mr. Mykolylk: suggest using time instead of counters
+John: adds that in previous experience testing complicated methods, it usually took more time when the numbers being tested were in the millions/billions. suggests that we use larger numbers in order to make timing easier. 
