@@ -1,4 +1,10 @@
+Perfect Purple Petunias (John Gupta-She, Lauren Lee, Emily Ortiz)
+APCS Pd 8
+L03: Get Empirical
+2021-12-16
+
 QCC:
+
 
 DISCO:
 Terminal Message with compiling BinSearch:
@@ -6,3 +12,5 @@ Note: BinSearch.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 
 Should not matter since we know elements are comparable (Integers).
+
+350,000,000,000 is too large for Java's storage capacity.

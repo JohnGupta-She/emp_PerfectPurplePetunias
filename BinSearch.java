@@ -7,12 +7,14 @@ public class BinSearch
      pre:  input array is sorted in ascending order
      post: returns index of target, or returns -1 if target not found
   **/
+/*
   public static int binSearch ( Comparable[] a, Comparable target ) {
     //uncomment exactly 1 of the 2 stmts below:
 
     return binSearchIter( a, target, 0, a.length-1 );
     //return binSearchRec( a, target, 0, a.length-1 );
   }
+  */
 
 
   public static int binSearchRec( Comparable[] a, Comparable target,
@@ -40,7 +42,7 @@ public class BinSearch
   }//end binSearchRec
 
 
-  public static int binSearchIter( Comparable[] a, Comparable target,
+  public static int binSearchIter( int[] a, int target,
                                    int lo, int hi )
   {
     int tPos = -1; //init return var to flag value -1
@@ -51,16 +53,17 @@ public class BinSearch
       m = (lo + hi) / 2; //update mid pos var
 
       // target found
-      if ( a[m].compareTo(target) == 0 )
+      if ( a[m] == target ){
         return m;
-
+      }
       // value at mid index higher than target
-      else if ( a[m].compareTo(target) > 0 )
+      else if ( a[m] > target ) {
         hi = m - 1; //move hi to index to left of mid
-
+      }
       // value at mid index lower than target
-      else if ( a[m].compareTo(target) < 0 )
+      else if ( a[m] < target ) {
         lo = m + 1; //move lo to index to right of mid
+      }
     }
     return tPos;
   }//end binSearchIter

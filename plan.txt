@@ -1,1 +1,34 @@
-foo
+How to Compare Speed
+* Record start and end time
+* end - start = time elapsed
+* less time = faster
+
+Array: {1, 2, 3, 4, 5}
+* 5 is the target
+
+Linear Search
+1
+2
+3
+4
+5
+Total Guesses: 5
+
+Binary Search
+3
+4
+5
+Total Guesses: 3
+
+Hypothesis
+* BinSearch is faster in most cases
+* Exceptioin: target is at index 0 or is very low
+
+Test Cases
+* Should create arrays that are very large
+* 350 mil / 350 bil elements
+
+Test
+* test target at different locations
+* use guess
+* average time

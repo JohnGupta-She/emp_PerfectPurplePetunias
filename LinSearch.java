@@ -7,13 +7,13 @@ public class LinSearch
      post: returns index of first occurrence of target, or
      returns -1 if target not found
   **/
-  public static int linSearch ( Comparable[] a, Comparable target )
+  public static int linSearch ( int[] a, int target )
   {
     int tPos = -1;
     int i = 0;
 
     while ( i < a.length ) {
-      if ( a[i].equals(target) ) {
+      if ( a[i] == target ) {
         tPos = i;
         break;
       }
