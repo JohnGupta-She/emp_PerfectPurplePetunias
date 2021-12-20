@@ -17,3 +17,7 @@ Length of array is 200,000,000
 Did not finish running but could be Emily's computer.
 Changed inputs for methods in BinSearch and LinSearch
 Made array of targets to use in testing.
+
+2021-12-20 In Class
+Changed testing to search for last element in an array
+Test different array lengths multiple times (100x) instead of testing different targets

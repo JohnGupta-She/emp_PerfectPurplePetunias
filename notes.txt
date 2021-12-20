@@ -4,7 +4,8 @@ L03: Get Empirical
 2021-12-16
 
 QCC:
-
+2021-12-20
+LinSearch returns -1 with parameters (test, test.length()-1)
 
 DISCO:
 Terminal Message with compiling BinSearch:
