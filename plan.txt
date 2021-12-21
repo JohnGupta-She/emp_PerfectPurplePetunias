@@ -26,9 +26,10 @@ Hypothesis
 
 Test Cases
 * Should create arrays that are very large
-* 350 mil / 350 bil elements
+* {10000000, 50000000, 500000000, 1000000000} elements
 
 Test
-* test target at different locations
-* use guess
-* average time
+* test with different sizes of arrays
+* test target at fixed location at worst possible location (last element)
+* calculate start and end times and subtract to find time taken (in milliseconds)
+* compare time taken with LinSearch and BinSearch.

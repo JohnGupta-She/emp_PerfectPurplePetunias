@@ -1,3 +1,4 @@
+import java.lang.System;
 public class SearchDriver {
 
   private static String toString(int[] input){
@@ -25,28 +26,51 @@ public class SearchDriver {
     1,000,000,000
     2,000,000,000
     */
-    int[] arraylengths = {10000000, 20000000, 100000000, 200000000};
-
+    int[] arraylengths = {10000000, 50000000, 500000000, 1000000000};
+    long[] timesLin = new long[4];
+    long[] timesBin = new long[4];
+    int x;
 
     System.out.println("LinSearch Test");
-    for (int x = 0; x < 100; x++){
-      for(int trialCtr = 0; trialCtr < 4; trialCtr ++){
-        fillTest(arraylengths[trialCtr], test);
-        System.out.println("Array Length " + test[trialCtr]);
-        for (int x = 0; x < 100; x++){
-          LinSearch.linSearch(test, test.length-1);
-        }
+    for(int trialCtr = 0; trialCtr < 4; trialCtr ++){
+      fillTest(arraylengths[trialCtr], test);
+      System.out.println("Array Length " + arraylengths[trialCtr]);
+      long timestart = System.currentTimeMillis();
+      for (int y = 0; y < 1000000000; y++){
+        LinSearch.linSearch(test, test.length-1);
       }
+      System.out.println("Test " + trialCtr + " complete");
+      long timeend = System.currentTimeMillis();
+      timesLin[trialCtr] = timeend - timestart;
     }
-    /*
-    System.out.println("BinSearch Test");
-    for(int trialCtr = 0; trialCtr < 10; trialCtr ++){
-      System.out.println("Trial " + trialCtr);
-      System.out.println(target[trialCtr]);
-      System.out.println(BinSearch.binSearchIter(test, target[trialCtr], 0, 200000000));
-    }
-    */
-    //System.out.println(toString(test));
-  }
+    System.out.println("LinSearch Complete");
 
+    System.out.println("BinSearch Test");
+    for(int trialCtr = 0; trialCtr < 4; trialCtr ++){
+      fillTest(arraylengths[trialCtr], test);
+      System.out.println("Array Length " + arraylengths[trialCtr]);
+      long timestart = System.currentTimeMillis();
+      for (int y = 0; y < 1000000000; y++){
+        BinSearch.binSearchRec( test, test.length-1, 0, test.length-1);
+      }
+      System.out.println("Test " + trialCtr + " complete");
+      long timeend = System.currentTimeMillis();
+      timesBin[trialCtr] = timeend - timestart;
+    }
+    System.out.println("BinSearch Complete");
+
+    System.out.println("LinSearch Results:");
+    for(int trialCtr = 0; trialCtr < 4; trialCtr++){
+      System.out.println("Test " + arraylengths[trialCtr] + ": " + timesLin[trialCtr]);
+    }
+    System.out.println("BinSearch Results:");
+    for(int trialCtr = 0; trialCtr < 4; trialCtr++){
+      System.out.println("Test " + arraylengths[trialCtr] + ": " + timesBin[trialCtr]);
+    }
+    System.out.println("Comparison:");
+    for(int trialCtr = 0; trialCtr < 4; trialCtr++){
+      System.out.println("Test " + arraylengths[trialCtr] + ": " + (timesLin[trialCtr] - timesBin[trialCtr]));
+    }
+  }
+    //System.out.println(toString(test));
 }

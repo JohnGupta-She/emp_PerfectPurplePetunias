@@ -21,3 +21,6 @@ Made array of targets to use in testing.
 2021-12-20 In Class
 Changed testing to search for last element in an array
 Test different array lengths multiple times (100x) instead of testing different targets
+
+2021-12-20 At Home
+Updated SearchDriver to count the time and return the amount of time taken in each test.

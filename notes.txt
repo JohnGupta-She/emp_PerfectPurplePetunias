@@ -4,14 +4,13 @@ L03: Get Empirical
 2021-12-16
 
 QCC:
-2021-12-20
-LinSearch returns -1 with parameters (test, test.length()-1)
+* LinSearch returns -1 with parameters (test, test.length()-1)
+* How do the first and second tests which are shorter take longer than the third and fourth tests?
 
 DISCO:
-Terminal Message with compiling BinSearch:
+* Terminal Message with compiling BinSearch:
 Note: BinSearch.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-
-Should not matter since we know elements are comparable (Integers).
-
-350,000,000,000 is too large for Java's storage capacity.
+* Should not matter since we know elements are comparable (Integers).
+* 350,000,000,000 is too large for Java's storage capacity.
+* currentTimeMillis counts time in the real world but based on our tests, it skews the results significantly.
