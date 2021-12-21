@@ -15,4 +15,4 @@
 * BinSearch took a short amount of time but time still increased as array size increased
 
 ## Conclusions
-* The results show that BinSearch will always take longer than BinSearch regardless of the length of the arrays. 
+* The results show that BinSearch will always take longer than LinSearch regardless of the length of the arrays. 
