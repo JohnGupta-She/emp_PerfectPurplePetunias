@@ -7,7 +7,7 @@
 
 ## Tests Performed
 * Tested arrays of length {100000, 500000, 5000000} with target at the last element each 100 times.
-* Recorded start and end times for each test, finding the difference to find how much time it took to find the target 1000000000 times.
+* Recorded start and end times for each test, finding the difference to find how much time it took to find the target 100times.
 
 ## Results
 * LinSearch took a significant amount of time for each test.
