@@ -6,13 +6,13 @@
 * Emily Ortiz
 
 ## Tests Performed
-* Tested arrays of length {10000000, 50000000, 500000000, 1000000000} with target at the last element each 1000000000 times.
+* Tested arrays of length {100000, 500000, 5000000} with target at the last element each 100 times.
 * Recorded start and end times for each test, finding the difference to find how much time it took to find the target 1000000000 times.
 
 ## Results
-* Strangely, the first and second test took the longest for LinSearch, taking around 10 ms for the first trial and 20 ms for the second. The last two tests took around 2ms each.
-* Testing BinSearch gave around 5 ms for the first test and about 2 ms for each following test.
+* LinSearch took a significant amount of time for each test.
+* LinSearch took a longer time when the array was bigger
+* BinSearch took a short amount of time but time still increased as array size increased
 
 ## Conclusions
-* The results show that LinSearch is faster for longer arrays, while taking longer on shorter arrays.
-* BinSearch and LinSearch are similar in speed for longer arrays, while BinSearch is faster on shorter arrays.
+* The results show that BinSearch will always take longer than BinSearch regardless of the length of the arrays. 

@@ -22,11 +22,11 @@ Total Guesses: 3
 
 Hypothesis
 * BinSearch is faster in most cases
-* Exceptioin: target is at index 0 or is very low
+* Exception: target is at index 0 or is very low
 
 Test Cases
 * Should create arrays that are very large
-* {10000000, 50000000, 500000000, 1000000000} elements
+* {100000, 500000, 5000000} elements
 
 Test
 * test with different sizes of arrays

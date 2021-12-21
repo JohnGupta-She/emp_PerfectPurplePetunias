@@ -6,6 +6,7 @@ L03: Get Empirical
 QCC:
 * LinSearch returns -1 with parameters (test, test.length()-1)
 * How do the first and second tests which are shorter take longer than the third and fourth tests?
+* Why do we have to use Comparable instead of int arrays?
 
 DISCO:
 * Terminal Message with compiling BinSearch:

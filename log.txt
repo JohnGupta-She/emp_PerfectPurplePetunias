@@ -24,3 +24,5 @@ Test different array lengths multiple times (100x) instead of testing different 
 
 2021-12-20 At Home
 Updated SearchDriver to count the time and return the amount of time taken in each test.
+Updated BinSearch and LinSearch to use Comparable instead of int[]
+Lower sizes of array and number of times tested to make testing more efficient and to avoid memory errors
