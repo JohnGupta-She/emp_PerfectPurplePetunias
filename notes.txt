@@ -15,3 +15,27 @@ Note: Recompile with -Xlint:unchecked for details.
 * Should not matter since we know elements are comparable (Integers).
 * 350,000,000,000 is too large for Java's storage capacity.
 * currentTimeMillis counts time in the real world but based on our tests, it skews the results significantly.
+
+GALLERY TOUR:
+----- 3 Lucky Duckies -----
+8 different experiments
+* Lin vs Bin Search
+* Search for 200 random integers vs search for worst case 500 times
+* 20 mil vs 50 mil array length
+
+----- Cute Cyclops Cult -----
+* Bin/Lin Search for target (worst case) 100 times
+* Test on 750k and 100 mil array
+* Ran Search Driver 20x
+Results
+* 750k array: 66% Lin/Bin same amt of time, 33% Bin faster by 1 sec
+* 100 mil array: Bin is faster
+
+----- Frog Hats -----
+4 experiments
+* Loop Runs 20 times (Bin search and Lin search)
+
+0: 9,999,999 int array, same random targets for Bin and Lin, Bin 0 ms, Lin 0-21 ms
+1: 10 int array, random targets, Bin 0ms, Lin 0ms
+2: Big array and worst case, Bin 0 ms, Lin 18-19 ms
+3: Small array and worst case, Bin 0 ms, Lin 0 ms
