@@ -29,3 +29,7 @@ Lower sizes of array and number of times tested to make testing more efficient a
 
 2021-12-21 In Class
 Gallery Tour-- took notes
+
+2021-12-21 At Home
+Fixed some bugs
+updated readme with notes
