@@ -7,7 +7,7 @@
 
 ## Tests Performed
 * Tested arrays of length {100000, 500000, 5000000} with target at the last element each 100 times.
-* Recorded start and end times for each test, finding the difference to find how much time it took to find the target 100times.
+* Recorded start and end times for each test, finding the difference to find how much time it took to find the target 100 times.
 
 ## Results
 * LinSearch took a significant amount of time for each test.
@@ -15,4 +15,4 @@
 * BinSearch took a short amount of time but time still increased as array size increased
 
 ## Conclusions
-* The results show that LinSearch will always take longer than BinSearch regardless of the length of the arrays. 
+* The results show that LinSearch will always take longer than BinSearch regardless of the length of the arrays.
